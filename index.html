@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>For Klerbells</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Cursor follower (optional cute glow) -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+
+    <!-- Background hearts -->
+    <div class="hearts" aria-hidden="true"></div>
+
+    <!-- Soft music (optional). Toggle removed by request -->
+    <audio id="bg-music" loop preload="auto" hidden>
+      <source src="assets/lofi.mp3" type="audio/mpeg" />
+    </audio>
+
+    <main id="app">
+      <!-- Page 0: Survey Intro -->
+      <section class="page page-survey is-active" data-page="survey">
+        <div class="survey-card">
+          <header class="survey-header">
+            <div class="crest" aria-hidden="true">📊</div>
+            <div class="school">
+              <h1 class="school-name">University of Mindanao</h1>
+              <p class="school-sub">Center for Educational Research</p>
+              <p class="form-title">Research Survey</p>
+            </div>
+          </header>
+          <hr class="rule" />
+        
+          <p class="survey-instructions">You are invited to take part in an academic survey on student experience. Your participation is voluntary and your responses are anonymous. By selecting Continue, you indicate your informed consent/assent as applicable.</p>
+          <div class="actions">
+            <button class="btn primary" id="btn-continue">Continue to the survey</button>
+          </div>
+        </div>
+      </section>
+      <!-- Page 1: Landing -->
+      <section class="page page-landing" data-page="landing">
+        <div class="center-stack">
+          <h1 class="title">Hiii klerbells, di bitaw ni survey actually I have something to show you hehe ✨</h1>
+          <button class="btn primary" id="btn-start">Start</button>
+        </div>
+      </section>
+
+      <!-- Page 2: Journey -->
+      <section class="page page-journey" data-page="journey">
+        <div class="paper">
+          <div class="paper-content">
+            <div class="story-lines" id="story-lines"></div>
+            <div class="controls">
+              <button class="btn primary" id="btn-next">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 3: Letter -->
+      <section class="page page-letter" data-page="letter">
+        <div class="center-stack">
+          <p class="subtitle">I click ang heart</p>
+          <div class="envelope-wrap">
+            <button class="envelope" id="envelope" aria-expanded="false" aria-controls="letter-content">
+              <span class="env-back"></span>
+              <span class="env-body"></span>
+              <span class="env-flap"></span>
+              <span class="seal">💌</span>
+              <article class="letter-in" id="letter-content" aria-hidden="true">
+                <div class="letter-in-scroll">
+                  <p>Hiii klerbells BAHAHAHAHA. It took me a lot of courage to tell you this and hooohh bahala na HAHAHA.</p>
+                  <p>We’ve been talking for 2 months already, and I can’t deny that I’m starting to like you. Actually, murag nagsugod na gani to before pa. Every time your name pops up on my notifications, mungisi rakog kalit HAHAHAHA. Or like, mag sige kog hulat sa imong replies maski katugon nako HAHAHAHA.</p>
+                  <p>Also, every time I’m not okay, mawala ra akong bad mood kung makasturya ko nimo. Thank you for that. I really enjoy doing things with you… those random calls maski way istorya HAHAHA, movie nights, magdula Roblox or ML, or unsa pa na.</p>
+                  <p>I know 2 months isn’t really enough to fully know someone labi na online ra ta nagkaila, but that’s exactly why I’m telling you this… because I want to know you more. I know you have a lot on your plate right now like studies and everything, but I just want to express how I feel towards you ehe HAHAHAHA.</p>
+                  <p>I don’t expect anything after this HAHAHA. No rush and no pressure, I just wanted to let you know how much I admire you hehe. If you don’t feel the same way, I completely understand (pero unta same ay HAHAHA).</p>
+                  <p>That’s all hehe. Thank you for existing 🫶</p>
+                </div>
+              </article>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
