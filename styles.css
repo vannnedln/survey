@@ -104,8 +104,8 @@ body {
 .meta-list .label { width: 180px; color: #666; }
 .meta-list li { display: grid; grid-template-columns: 180px 1fr; gap: 10px; align-items: center; }
 .meta-list .value { font-weight: 600; color: #222; }
-.survey-instructions { margin: 6px 0 12px 0; color: #444; }
-.survey-card .actions { display: flex; justify-content: flex-end; margin-top: 12px; }
+.survey-instructions { margin: 6px 0 12px 0; color: #444; text-align: justify; text-justify: inter-word; }
+.survey-card .actions { display: flex; justify-content: center; margin-top: 12px; }
 .page-survey .btn.primary { background: linear-gradient(45deg, #2f6bff, #7aa5ff); box-shadow: 0 0 20px rgba(47,107,255,0.35); }
 
 .title { font-family: "DM Serif Display", serif; font-size: 2rem; line-height: 1.2; max-width: 22ch; }
